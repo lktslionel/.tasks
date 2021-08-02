@@ -1,9 +1,12 @@
 version: '3'
 
 
+vars:
+  MAIN_TASKFILE_PATH: "../../Taskfile.yml"
+
 tasks:
   
-  labels:sync: 
+  labels-sync: 
     desc: Sync your repo labels with labels reference
     summary: |
       SYNOPSIS: 
@@ -21,6 +24,11 @@ tasks:
 
         Example 2:
           $ task {{ .TASK }} GITHUB_TOKEN=xxxx-zzz-cccc
-    vars:
-      GITHUB_TOKEN: 
+    dir: adhocs/github
+    env:
+      GITHUB_TOKEN: "{{ .GITHUB_TOKEN }}"
+      TASK_NAME: "{{ .TASK }}"
+      MAIN_TASKFILE_PATH: "{{ .MAIN_TASKFILE_PATH }}"
+    cmds:
+      - ./scripts/labels-sync.sh
       

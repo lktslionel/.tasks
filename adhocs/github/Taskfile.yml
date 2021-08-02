@@ -1,0 +1,26 @@
+version: '3'
+
+
+tasks:
+  
+  labels:sync: 
+    desc: Sync your repo labels with labels reference
+    summary: |
+      SYNOPSIS: 
+        Sync your repo labels with labels reference
+
+      SYNTAX
+        task {{ .TASK }} GITHUB_TOKEN=<VALUE>
+
+      PARAMETERS
+        GITHUB_TOKEN: GitHub API Access Token   
+
+      EXAMPLES:
+        Example 1:
+          $ task {{ .TASK }} GITHUB_TOKEN=xxxx-zzze--ccccc
+          
+        Example 2:
+          $ task {{ .TASK }} GITHUB_TOKEN=xxxx-zzze--ccccc
+    vars:
+      GITHUB_TOKEN: 
+      

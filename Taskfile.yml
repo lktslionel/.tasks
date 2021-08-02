@@ -1,0 +1,6 @@
+version: '3'
+
+
+includes:
+  
+  adhocs:github: ./adhocs/github/Taskfile.yml

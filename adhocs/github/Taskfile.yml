@@ -17,10 +17,10 @@ tasks:
 
       EXAMPLES:
         Example 1:
-          $ task {{ .TASK }} GITHUB_TOKEN=xxxx-zzze--ccccc
-          
+          $ task {{ .TASK }} GITHUB_TOKEN=xxxx-zzz-cccc
+
         Example 2:
-          $ task {{ .TASK }} GITHUB_TOKEN=xxxx-zzze--ccccc
+          $ task {{ .TASK }} GITHUB_TOKEN=xxxx-zzz-cccc
     vars:
       GITHUB_TOKEN: 
       

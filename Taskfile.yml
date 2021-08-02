@@ -1,6 +1,9 @@
 version: '3'
 
 
+env:
+  GLOBAL_ENVVAR_ENABLED: true
+
 includes:
   
   adhocs:github: ./adhocs/github/Taskfile.yml

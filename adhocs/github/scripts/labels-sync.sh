@@ -8,3 +8,6 @@ echo Help:
 
 echo cli args: $*
 
+
+echo Global env var: $GLOBAL_ENVVAR_ENABLED
+

@@ -30,5 +30,5 @@ tasks:
       TASK_NAME: "{{ .TASK }}"
       MAIN_TASKFILE_PATH: "{{ .MAIN_TASKFILE_PATH }}"
     cmds:
-      - ./scripts/labels-sync.sh
+      - ./scripts/labels-sync.sh {{ .CLI_ARGS }}
       
